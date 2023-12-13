@@ -97,46 +97,6 @@ The command pip install transformers is used to install the transformers package
 ```
 Once the transformers package is installed, you can import and use the Transformer-based models in your own projects.
 
-Brief Explanation of Code:
-
-•	Loading Models and Libraries
-
-    Imports necessary libraries and models: whisper, os, pinecone, time, various modules from langchain, datasets, and transformers.
-  
-•	Model Initialization and Usage
-
-    Loads the whisper model and performs transcriptions and translations of an audio/video file.
-  
-    Whisper model output taken as a query for RAG implemented chatbot.
-  
-    Initializes a chat model (ChatOpenAI) for interaction and creates messages for the chatbot.
-  
-    Utilizes the chat model to get responses and prints the content.
-  
-•	Dataset and Vector Storage
-
-    Loads a dataset related to "llama-2-arxiv-papers-chunked".
-  
-    Initializes Pinecone for vector storage, creates an index, and updates it with embeddings and metadata.
-  
-•	Vector Search and Augmented Prompt
-
-    Performs similarity searches in the vector store based on a given query.
-  
-    Defines a function to create an augmented prompt using retrieved knowledge to assist in answering queries.
-  
-•	RAG Implementation
-
-    Constructs prompts for the RAG (Retrieval-Augmented Generation) model, appending queries to messages.
-  
-    Uses the chat model for RAG implementation and prints the new answer using RAG.
-  
-•	Summarization
-
-    Loads a summarization model.
-  
-    Summarizes the chatbot output from the RAG using the summarization model and prints the summary.
-
 
     
 
